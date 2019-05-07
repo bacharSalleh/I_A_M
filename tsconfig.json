@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es2015",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "lib": ["es2015", "esnext.asynciterable"],
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "src",
+    "rootDir": ".",
+    "paths": {
+      "@Config": ["config.ts"],
+      "@Routes": ["routes.ts"],
+      "@Server": ["server.ts"],
+      "@Messages": ["messages.ts"],
+      "@Startup/*": ["startup/*"],
+      "@Adapters/*": ["adapters/*"],
+      "@Controllers/*": ["controllers/*"],
+      "@Middlewares/*": ["middlewares/*"],
+      "@Utils/*": ["utils/*"],
+      "@Shared/*": ["shared/*"],
+      "@Domain/*": ["domain/*"],
+      "@Data/*": ["data/*"],
+      "@Test/*": ["../test/helpers/*"]
+    }
+  }
+}
